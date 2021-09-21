@@ -1,14 +1,14 @@
 # Getting-and-Cleaning-Data---Course-Project
-This is the course project for the Getting and Cleaning Data Coursera course.
+Download this zip file https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzip into a folder on your local drive.
 
-The included R script, run_analysis.R, conducts the following:
+The downloaded folder will be " UCI HAR Dataset "
 
-Download the dataset from web if it does not already exist in the working directory.
+Put run_analysis.R inside this folder (by cloning this repository)
 
-Read both the train and test datasets and merge them into x(measurements), y(activity) and subject, respectively.
+Before running this script, please set your working directory to the folder UCI HAR Dataset and then: source("run_analysis.R")
 
-Load the data(x's) feature, activity info and extract columns named 'mean'(-mean) and 'standard'(-std). Also, modify column names to descriptive. (-mean to Mean, -std to Std, and remove symbols like -, (, ))
+This will run the file and result in a file tidy_data.txt
 
-Extract data by selected columns(from step 3), and merge x, y(activity) and subject data. Also, replace y(activity) column to it's name by refering activity label (loaded step 3).
+Also, the combined data set would be present in a variable final_data tidy_data.txt -- 180 * 68 data table -- this is the final tidy data
 
-Generate 'Tidy Dataset' that consists of the average (mean) of each variable for each subject and each activity. The result is shown in the file tidy_dataset.txt.
+It takes some time for the script to run, so do be patient
